@@ -1,0 +1,176 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;  
+}
+.site-init{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    /* height:30vh; */
+    height:10vh;
+    /* background-color:#d03000; */
+    background-color:darkorchid;
+    color:black;
+}
+.site-init h1{
+    letter-spacing:2px;
+    word-spacing:2px;
+}
+.site-init nav a{
+    color:black;
+    text-decoration:none;
+    margin-right:2rem;
+    font-weight:600;
+    letter-spacing:1px;
+}
+main{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height:70vh;
+    margin-top:40px;
+}
+main .login-container{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background-color:#dedede;
+    height:10rem;
+    width:20rem;
+    padding:1rem;
+    margin:1rem;
+    /* border-radius:15%; */
+}
+.login-container input{
+    width:15rem;
+    padding:5px;
+    margin-bottom:1rem;
+
+}
+.login-container button{
+    padding:.5rem;
+    background-color:black;
+    border:none;
+    color:white;
+}
+/* body .page-container{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+} */
+@media (max-width:600px){
+    /* lookup display none for class */
+    .site-init h1{
+        letter-spacing:1px;
+        word-spacing:1px;
+        font-size:15px;
+        font-weight:700;
+    } 
+    .site-register h1{
+        letter-spacing:1px;
+        word-spacing:1px;
+        font-size:15px;
+        font-weight:700;
+    } 
+    .site-init nav a{
+        color:black;
+        text-decoration:none;
+        margin-right:1rem;
+        font-weight:600;
+        letter-spacing:1px;
+    }
+    .site-register nav a{
+        color:black;
+        text-decoration:none;
+        margin-right:1rem;
+        font-weight:600;
+        letter-spacing:1px;
+    }
+}
+/* register.html */
+
+.site-register{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    /* height:30vh; */
+    height:10vh;
+    /* background-color:#d03000; */
+    background-color:darkorchid;
+    color:black;
+}
+.site-register h1{
+    letter-spacing:2px;
+    word-spacing:2px;
+}
+.site-register nav a{
+    color:black;
+    text-decoration:none;
+    margin-right:2rem;
+    font-weight:600;
+    letter-spacing:1px;
+}
+
+.form-container{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+input:first-of-type{
+    margin-top:2rem;
+}
+input{
+/* width */
+    width:15rem;
+    padding:5px;
+    margin-bottom:1rem;;
+}
+button{
+    padding:.5rem;
+    background-color:black;
+    border:none;
+    color:white;
+}  
+/* nav a{
+    text-decoration:none;
+    color:black;
+    word-spacing:2px;
+    letter-spacing:1px;
+} */
+/* header h1{
+    letter-spacing:2px;
+    word-spacing:2px;
+}
+.site-register nav a{
+    color:black;
+    text-decoration:none;
+    margin-right:2rem;
+    font-weight:600;
+    letter-spacing:1px;
+} */
+main label{
+    font-size:25px;
+    font-weight:550;
+}
+div.form-container h2{
+    text-align:center;
+}
+.input-error{
+    border:1px solid red;
+}
+.input-clear{
+    border:1px solid black;
+}
+.alert-error{
+    border:1px solid darkred;
+    color:darkred;
+    background-color:pink;
+}
+.hide{
+    display:none;
+}

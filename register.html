@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="mystyle.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="site-register">
+        <h1> User Registration System 🔑🔒</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="register.html">Register</a>
+        </nav>
+    </header>
+
+    <main>
+       
+        <!-- fieldset tag, legend tag -->
+        <!-- form with fields:email,password,first name,last name,age,address,phone,payment,color -->
+        <div class="form-container">
+            <h2>Register</h2>
+            <p class="alert-error hide" id="alertError">here are the errors</p>
+        <input type="email" id="txtEmail" placeholder="enter your email">
+        <input type="password" id="txtPassword" placeholder="enter your password">
+        <input type="text" id="txtFirstName" placeholder="enter your first name">
+        <input type="text" id="txtLastName" placeholder="enter your last name">
+        <input type="number" id="txtAge" placeholder="enter your age"> 
+        <input type="text" id="txtAddress" placeholder="enter your address">
+        <input type="text" id="txtPhone" placeholder="enter your phone number">
+        <input type="text" id="txtPayment" placeholder="enter your payment">
+        <label>Favorite Color</label>
+        <input type="color" id="txtColor" placeholder="enter your preferred color"> 
+
+
+        <!-- christopher used radio for payment, there is example of this in previous code, some version of pet salon i think -->
+        <!-- $("input[name=“payment”]:checked").val()
+
+vs
+
+$("input[name='payment']:checked").val()
+
+i think using the same quotes was ending the selector early
+ -->
+
+        <button id="btnRegister">Register</button>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts/storeManager.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
